@@ -23,7 +23,10 @@ public class RestfulWebServicesApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 					.allowedMethods("*")
+					//when you have to run on local host
 					.allowedOrigins("http://localhost:3000");
+                     //when you have to run on vercel domain
+//					.allowedOrigins("https://prajwaltodos.vercel.app/");
 			}
 		};
 	}
